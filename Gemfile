@@ -7,5 +7,8 @@ gemspec
 
 ruby "2.6.3"
 
+gem "guard"
+gem "guard-rspec"
+gem "guard-rubocop"
 gem "pry"
 gem "rubocop"
