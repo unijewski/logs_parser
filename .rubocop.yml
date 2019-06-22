@@ -1,0 +1,8 @@
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 110
+AllCops:
+  TargetRubyVersion: 2.6.3
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
