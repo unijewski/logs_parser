@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require "logs_parser/version"
-
 module LogsParser
 end
+
+require "logs_parser/command_line_handler"
+require "logs_parser/version"
