@@ -4,5 +4,6 @@ module LogsParser
 end
 
 require "logs_parser/command_line_handler"
+require "logs_parser/entries_analyzer"
 require "logs_parser/log_file_loader"
 require "logs_parser/version"
