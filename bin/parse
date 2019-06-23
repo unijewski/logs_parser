@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "thor"
+require "logs_parser"
+
+class Parse < Thor
+  def self.exit_on_failure?
+    true
+  end
+
+  desc "file PATH", "logs we want to parse"
+  option :unique, type: :boolean, desc: "show unique visits", aliases: "-u"
+  def file(path)
+    ::LogsParser::CommandLineHandler.new(path, options).call
+  end
+end
+
+Parse.start
